@@ -28,9 +28,8 @@ let objectHasSmthIn
     for(key in obj){
         objectHasSmthIn = key
     }
-    if(objectHasSmthIn === undefined){
-        objectHasSmthIn = true
-    } else { objectHasSmthIn = false }
+    objectHasSmthIn = (objectHasSmthIn === undefined)
+
     return objectHasSmthIn
 }
-console.log(isEmpty(experimentObject2))
+console.log(isEmpty(experimentObject1))
